@@ -137,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177963558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.39, y: -0.86, z: 0}
+  m_LocalPosition: {x: -8.13, y: -0.86, z: 0}
   m_LocalScale: {x: 1.06, y: 10.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1367643815}
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276426156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.18, y: -0.86, z: 0}
+  m_LocalPosition: {x: 9.86, y: -0.86, z: 0}
   m_LocalScale: {x: 1.06, y: 10.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1367643815}
@@ -251,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310591096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.86, y: -6.21, z: 0}
+  m_LocalPosition: {x: 0.86, y: -5.89, z: 0}
   m_LocalScale: {x: 18.6276, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1367643815}
@@ -390,7 +390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129442738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.86, y: 4.46, z: 0}
+  m_LocalPosition: {x: 0.86, y: 4.25, z: 0}
   m_LocalScale: {x: 18.6276, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1367643815}
@@ -468,7 +468,6 @@ GameObject:
   - component: {fileID: 1766209551}
   - component: {fileID: 1766209555}
   - component: {fileID: 1766209554}
-  - component: {fileID: 1766209553}
   - component: {fileID: 1766209557}
   m_Layer: 0
   m_Name: Ball
@@ -539,20 +538,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1766209553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766209550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c0bd6d54eb34434683c1f213a6125eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xInitialForce: 30
-  yInitialForce: 15
 --- !u!50 &1766209554
 Rigidbody2D:
   serializedVersion: 4
@@ -604,4 +589,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
   ballAngle: {x: 100, y: 100}
-  speed: 15
+  speed: 10
