@@ -468,8 +468,8 @@ GameObject:
   - component: {fileID: 1766209551}
   - component: {fileID: 1766209555}
   - component: {fileID: 1766209554}
-  - component: {fileID: 1766209556}
   - component: {fileID: 1766209553}
+  - component: {fileID: 1766209557}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -590,7 +590,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.0036078095}
   serializedVersion: 2
   m_Radius: 0.23290223
---- !u!114 &1766209556
+--- !u!114 &1766209557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -599,12 +599,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1766209550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29255b76eb55417479d2fa7a97c26002, type: 3}
+  m_Script: {fileID: 11500000, guid: 810f76efaee08f1488607a0fcee8d028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upButton: 273
-  downButton: 274
-  leftButton: 276
-  rightButton: 275
-  speed: 10
-  yBoundary: 10
+  mainCamera: {fileID: 519420031}
+  ballAngle: {x: 100, y: 100}
+  speed: 15
