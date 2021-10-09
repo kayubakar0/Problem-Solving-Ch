@@ -6,6 +6,7 @@ public class BallMouseController : MonoBehaviour
 {
     private Rigidbody2D playerRigidbody;
     public Camera mainCamera;
+    public ScoreController scoreController;
 
     // Header
     [Header("Ball Movement")]
@@ -24,5 +25,13 @@ public class BallMouseController : MonoBehaviour
 
          if (Vector3.Distance(target, transform.position) > 0.5)
             transform.Translate(moveAngle.normalized * speed * Time.deltaTime);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Box")
+        {
+            scoreController.IncreaseCurrentScore(1);
+            Destroy(collision.gameObject);
+        }
     }
 }

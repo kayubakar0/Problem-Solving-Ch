@@ -19,7 +19,7 @@ public class RandomSpawn : MonoBehaviour
 		{
 			Instantiate(Object, Location);
 			ToSpawn = false;
-			StartCoroutine(ToSpawnTrue());
+			// StartCoroutine(ToSpawnTrue());
 		}
 	}
 
