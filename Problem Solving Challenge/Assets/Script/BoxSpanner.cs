@@ -6,7 +6,7 @@ public class BoxSpanner : MonoBehaviour
 {
     public Rigidbody2D boxTemplates;
     private float boxTemplateHeight = 7f;
-    private float boxTemplateWidth = 15f;
+    private float boxTemplateWidth = 7f;
 
     private List<GameObject> spawnedBox;
 
@@ -15,7 +15,7 @@ public class BoxSpanner : MonoBehaviour
         spawnedBox = new List<GameObject>(0);
 
         //GenerateBox for Problem 6
-        int boxCount = Random.Range(10, 30);
+        int boxCount = Random.Range(6, 10);
         for (int i = 0; i <= boxCount; i++)
         {
             float posX = Random.Range(-boxTemplateWidth / 2, boxTemplateWidth / 2);

@@ -16,6 +16,7 @@ public class BallMouseController : MonoBehaviour
     private void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
+        transform.Rotate(new Vector3(0, 0, 90 * Time.deltaTime));
     }
 
     private void Update()
